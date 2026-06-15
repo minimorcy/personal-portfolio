@@ -118,6 +118,19 @@ vercel
 ```
 Vercel auto-detects Next.js, sets `NODE_VERSION`, and enables ISR by default.
 
+### Deploy on VPS
+
+1. **Prerequisites**: Install Node.js 18+, npm, PM2 (`npm i -g pm2`), nginx, certbot
+2. **Clone repo**: `git clone <repo-url> && cd personal-portfolio`
+3. **Configure env**: `cp .env.local.example .env.local` and fill in your values
+4. **Install dependencies**: `npm ci`
+5. **Build**: `npm run build`
+6. **Start with PM2**: `pm2 start ecosystem.config.js && pm2 save`
+7. **Configure nginx**: `sudo cp nginx/portfolio.conf /etc/nginx/sites-available/portfolio && sudo ln -s /etc/nginx/sites-available/portfolio /etc/nginx/sites-enabled/ && sudo nginx -t && sudo systemctl reload nginx`
+8. **SSL certificate**: `sudo certbot --nginx -d javiermorcillonuevo.com -d www.javiermorcillonuevo.com`
+
+For subsequent deployments, run `./deploy.sh` on the server.
+
 ---
 
 If this project helps, consider reading the accompanying article and sharing your feedback.
