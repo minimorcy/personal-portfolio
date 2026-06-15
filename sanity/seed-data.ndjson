@@ -1,0 +1,25 @@
+{"_type":"profile","_id":"profile-1","name":"Javier Morcillo","title":"Desarrollador Full-Stack","bio":"Desarrollador full-stack con experiencia en la creación de aplicaciones web modernas y escalables. Apasionado por las buenas prácticas de código, la arquitectura limpia y el aprendizaje continuo. Especializado en el ecosistema JavaScript/TypeScript, con dominio de React, Next.js y Node.js. Siempre buscando mejorar la experiencia del usuario y la calidad del software.","location":"España","email":"contacto@javiermorcillonuevo.com"}
+{"_type":"experience","_id":"exp-1","company":"Empresa Tech","role":"Desarrollador Full-Stack","startDate":"2023-03-01","endDate":"2025-06-01","description":"Desarrollo de aplicaciones web con React y Next.js. Implementación de APIs RESTful con Node.js y Express. Colaboración en equipos ágiles para entregar funcionalidades de alto impacto.","technologies":["React","Next.js","TypeScript","Node.js","PostgreSQL","Docker"]}
+{"_type":"experience","_id":"exp-2","company":"Startup Digital","role":"Desarrollador Frontend","startDate":"2021-09-01","endDate":"2023-02-28","description":"Diseño e implementación de interfaces de usuario responsivas y accesibles. Migración de código legacy a TypeScript. Optimización del rendimiento y tiempos de carga.","technologies":["React","TypeScript","Tailwind CSS","GraphQL","Prisma"]}
+{"_type":"experience","_id":"exp-3","company":"Consultora Web","role":"Desarrollador Junior","startDate":"2020-06-01","endDate":"2021-08-31","description":"Desarrollo de sitios web para clientes diversos. Mantenimiento de aplicaciones existentes y resolución de incidencias. Aprendizaje de metodologías ágiles.","technologies":["JavaScript","HTML","CSS","PHP","MySQL","Git"]}
+{"_type":"skill","_id":"skill-1","name":"TypeScript","category":"language","level":5}
+{"_type":"skill","_id":"skill-2","name":"React","category":"frontend","level":5}
+{"_type":"skill","_id":"skill-3","name":"Next.js","category":"frontend","level":5}
+{"_type":"skill","_id":"skill-4","name":"Tailwind CSS","category":"frontend","level":4}
+{"_type":"skill","_id":"skill-5","name":"HTML/CSS","category":"frontend","level":5}
+{"_type":"skill","_id":"skill-6","name":"Node.js","category":"backend","level":4}
+{"_type":"skill","_id":"skill-7","name":"Express","category":"backend","level":4}
+{"_type":"skill","_id":"skill-8","name":"GraphQL","category":"backend","level":3}
+{"_type":"skill","_id":"skill-9","name":"Prisma","category":"backend","level":4}
+{"_type":"skill","_id":"skill-10","name":"PostgreSQL","category":"database","level":4}
+{"_type":"skill","_id":"skill-11","name":"MongoDB","category":"database","level":3}
+{"_type":"skill","_id":"skill-12","name":"Docker","category":"devops","level":3}
+{"_type":"skill","_id":"skill-13","name":"AWS","category":"devops","level":3}
+{"_type":"skill","_id":"skill-14","name":"Git","category":"tool","level":5}
+{"_type":"education","_id":"edu-1","institution":"Universidad de España","degree":"Grado en Ingeniería Informática","startDate":"2016-09-01","endDate":"2020-06-30","description":"Especialización en ingeniería del software y desarrollo de aplicaciones web. Proyecto de fin de grado sobre arquitecturas modernas de frontend."}
+{"_type":"socialLink","_id":"social-1","platform":"GitHub","url":"https://github.com/minimorcy","icon":"github","order":1}
+{"_type":"socialLink","_id":"social-2","platform":"LinkedIn","url":"https://linkedin.com/in/javiermorcillonuevo","icon":"linkedin","order":2}
+{"_type":"socialLink","_id":"social-3","platform":"Email","url":"mailto:contacto@javiermorcillonuevo.com","icon":"email","order":3}
+{"_type":"project","_id":"proj-1","title":"Portfolio Personal","slug":{"_type":"slug","current":"portfolio-personal"},"description":"Portfolio profesional desarrollado con Next.js, Sanity CMS y Tailwind CSS. Incluye blog, sección de proyectos y formulario de contacto.","technologies":["Next.js","TypeScript","Tailwind CSS","Sanity"],"featured":true,"repoUrl":"https://github.com/minimorcy/personal-portfolio","demoUrl":"https://javiermorcillonuevo.com"}
+{"_type":"project","_id":"proj-2","title":"Gestor de Tareas","slug":{"_type":"slug","current":"gestor-de-tareas"},"description":"Aplicación de gestión de tareas con autenticación, tableros Kanban y notificaciones en tiempo real. Backend con Node.js y base de datos PostgreSQL.","technologies":["React","Node.js","PostgreSQL","Socket.io","Docker"],"featured":true,"repoUrl":"https://github.com/minimorcy/task-manager"}
+{"_type":"project","_id":"proj-3","title":"API de Clima","slug":{"_type":"slug","current":"api-clima"},"description":"API REST para consultar datos meteorológicos con caché y rate limiting. Documentación con Swagger y despliegue en AWS.","technologies":["Express","TypeScript","Redis","AWS","Swagger"],"featured":false,"repoUrl":"https://github.com/minimorcy/weather-api"}
