@@ -1,25 +1,13 @@
 import { NextResponse } from 'next/server';
+import { fetchGitHub, getUsername } from '@/lib/github';
 
 export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
-    const username = process.env.GITHUB_USERNAME || 'your-github-username';
+    const username = getUsername();
     const url = `https://api.github.com/users/${username}/repos?per_page=100&sort=created&direction=desc`;
-    const res = await fetch(url, {
-      headers: {
-        'User-Agent': 'nextjs-portfolio',
-        'Accept': 'application/vnd.github+json',
-        ...(process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {})
-      },
-      cache: 'no-store',
-    });
-
-    if (!res.ok) {
-      return NextResponse.json({ error: 'GitHub error' }, { status: 502 });
-    }
-
-    const data = await res.json();
+    const data = await fetchGitHub<any[]>(url);
     const sorted = Array.isArray(data)
       ? [...data].sort((a, b) => {
           const da = new Date(a?.created_at ?? 0).getTime();

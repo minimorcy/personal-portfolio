@@ -1,4 +1,4 @@
-# Plan: Portfolio Comprehensive Analysis & Improvement Plan
+﻿# Plan: Portfolio Comprehensive Analysis & Improvement Plan
 
 ## TL;DR
 
@@ -120,7 +120,7 @@ T1 → T5 → T10 → T7 → T19 → T20
 
 ---
 
-- [ ] **T1. Configurar GITHUB_TOKEN y centralizar fetching**
+- [x] **T1. Configurar GITHUB_TOKEN y centralizar fetching**
 
   **What to do**:
   - Activar `GITHUB_TOKEN` en `.env` (crear token en GitHub → Settings → Developer settings → Personal access tokens → classic, scope: `public_repo`)
@@ -185,7 +185,7 @@ T1 → T5 → T10 → T7 → T19 → T20
 
 ---
 
-- [ ] **T2. Activar ISR real con revalidación**
+- [x] **T2. Activar ISR real con revalidación**
 
   **What to do**:
   - En `app/page.tsx`: eliminar `export const dynamic = 'force-dynamic'` (línea 3)
@@ -242,7 +242,7 @@ T1 → T5 → T10 → T7 → T19 → T20
 
 ---
 
-- [ ] **T3. Crear loading.tsx y error.tsx**
+- [x] **T3. Crear loading.tsx y error.tsx**
 
   **What to do**:
   - Crear `app/loading.tsx`: componente server que renderiza una grid de 6 skeleton cards con animación `animate-pulse` de Tailwind
@@ -301,7 +301,7 @@ T1 → T5 → T10 → T7 → T19 → T20
 
 ---
 
-- [ ] **T4. Enriquecer datos de GitHub**
+- [x] **T4. Enriquecer datos de GitHub**
 
   **What to do**:
   - Extender tipo `Repo` (en archivo compartido `types/github.ts`) con: `stargazers_count`, `forks_count`, `topics: string[]`, `homepage: string | null`, `language: string | null`, `updated_at`, `pushed_at`
@@ -365,7 +365,7 @@ T1 → T5 → T10 → T7 → T19 → T20
 
 ---
 
-- [ ] **T5. Extraer tipos y constantes a archivos compartidos**
+- [x] **T5. Extraer tipos y constantes a archivos compartidos**
 
   **What to do**:
   - Crear `types/github.ts`: interfaces `Repo`, `GitHubUser`, `LanguageColor`
@@ -418,7 +418,7 @@ T1 → T5 → T10 → T7 → T19 → T20
 
 ---
 
-- [ ] **T6. Implementar debounce en búsqueda**
+- [x] **T6. Implementar debounce en búsqueda**
 
   **What to do**:
   - Crear `hooks/useDebounce.ts`: hook genérico `useDebounce<T>(value: T, delay: number): T`
